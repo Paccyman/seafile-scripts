@@ -26,9 +26,11 @@ def ClientHttpError(code, message):
         print('ClientHttpError[%s: %s]' % (code, message))
         sys.exit(1)
 
+
 def DoesNotExist(msg):
         print('DoesNotExist: {}'.format(msg))
         sys.exit(1)
+
 
 class Seafile:
     def __init__(self, server, username, password):
@@ -115,7 +117,7 @@ class Seafile:
         """
         Get download link for file or dir
         If f endswtih '/' a link to folder will be generated
-        :param repo_des: Library Name
+        :param repo_name: Library Name
         :param p: path to file or dir
         :return: str
         """
